@@ -1,0 +1,137 @@
+body{
+    background-color: #F0F9FB;
+    margin: 0px;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.cabecalho{
+    background-color: #CCE7FF;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.logo{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    max-width: 250px;
+    max-height: 50px;
+}
+
+.logo img{
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo h2{
+    align-self: center;
+}
+
+.menu{
+    padding: 10px 15px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    max-height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    text-decoration:none;
+}
+
+.dropbtn {
+    background-color: #CCE7FF; 
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    align-items: center;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #b6ebfc}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(85, 114, 149);
+}
+
+.home{
+
+    background-image: url("../IMG/weather-effects-composition.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    display: table;
+}
+
+.card{ 
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.initial-card{
+    margin: 0px 00px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(3px);
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.initial-card p{    
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    margin: 20px;
+}
