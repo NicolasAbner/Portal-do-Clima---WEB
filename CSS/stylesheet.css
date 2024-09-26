@@ -295,6 +295,9 @@ body{
 .tag-pink {
     background-color: #cd5b9f;
 }
+.tag-yellow{
+    background-color: #f6b047;
+}
 
 .card-body p {
     font-size: 13px;
