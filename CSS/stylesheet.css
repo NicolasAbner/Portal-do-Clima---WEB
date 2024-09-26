@@ -1,13 +1,24 @@
+
 body{
     background-color: whitesmoke;
     margin: 0px;
     max-height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* overflow: hidden; */
+    overflow-y: scroll;
 }
 
-/* Definição cabeçalho + título + logo site */
+/* Removido Scrollbar Chrome, Safari, Opera */
+body::-webkit-scrollbar{
+    display: none;
+}
 
+/* Removido Scrollbar IE, Edge e Firefox */
+/* body{
+    -mds-overflow-style: none;  Removido Scrollbar IE e Edge
+     scrollbar-width: none; Removido Scrollbar Firefox 
+}*/
+
+/* Definição cabeçalho + título + logo site */
 .cabecalho{
     background-color: #8facc6;
     justify-content: space-between;
@@ -15,7 +26,7 @@ body{
     flex-direction: row;
     padding: 10px;
     border: 2px solid;
-    border-radius: 5px;
+
 }
 
 .logo{
@@ -74,7 +85,7 @@ body{
 }
 
 .dropdown {
-    padding: 10px;
+
     position: relative;
     display: inline-block;
 }
@@ -84,7 +95,7 @@ body{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -198,7 +209,7 @@ body{
     text-align: center;  
     color: #ffff;
     font-size: x-large;
-    margin: 5px;
+    margin: 5px 5px 15px 5px;
 }
 
 .initial-card h2{
@@ -212,7 +223,7 @@ body{
     text-align: center;  
     color: #ffff;
     font-size: x-large;
-    margin: 5px;
+    margin: 5px 5px 15px 5px;
 }
 
 .initial-card-home h2{
@@ -229,13 +240,11 @@ body{
     width: 100%;
     height: fit-content;
     margin: 10px 0px 50px 0px;
-
-}
-
-.container-corpo{
     justify-content: center;
     align-items: center;
+
 }
+
 
 .titulo-secao{
 
@@ -266,7 +275,8 @@ body{
 .container-conteudo p{
 
     font-size: large;
-    margin: 50px;
+    width: 90%;
+    margin: 50px 70px;
 
 }
 
