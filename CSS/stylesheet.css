@@ -99,7 +99,7 @@ body{
 
 .home{
 
-    background-image: url("../IMG/home_index.jpg");
+    background-image: url("../IMG/home_bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ body{
 }
 
 .initial-card-home h2{
-    color: #CCE7FF;
+    color: #73a9d9;
     text-align: center;
 }
 
@@ -233,7 +233,35 @@ body{
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 300px;
+    transition: transform .5s;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+        content: '';
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale3d(1.026, 1.026, 1);
+
+        &::after {
+        opacity: 1;
+        }
+    }
 }
+
+.card-image :hover{
+    cursor: pointer;
+}
+
 .card-header img {
     width: 100%;
     height: 200px;
@@ -344,11 +372,10 @@ body{
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #444;
     cursor: pointer;
     padding: 18px;
     width: 90%;
@@ -356,34 +383,41 @@ body{
     border-radius: 10px;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.4s;
     margin-top: 30px;
 
-  }
-  
-  .active, .accordion:hover {
+}
+
+.accordion i{
+
+    font-size: 20px;
+    margin: 0px 10px 0px 0px;
+
+}
+
+.active, .accordion:hover {
     background-color: rgb(155, 187, 227);
-  }
-  
-  .accordion:after {
+}
+
+.accordion:after {
     content: '\002B';
-    color: #777;
     font-weight: bold;
     font-size: 20px;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
-  }
-  
-  .panel {
+}
+
+.panel {
     width: 87%;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
