@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/stylesheet.css">
-    <script src="./JS/javascript.js"></script>
+    <script type="text/javascript" src="./JS/javascript.js"></script>
     <script src="https://kit.fontawesome.com/051e1d8433.js" crossorigin="anonymous"></script>
     <title> Portal Climático </title>
 </head>
@@ -19,8 +19,8 @@
                 <div class="dropdown">
                     <button class="dropbtn"><a href="index.html">Home</a></button>
                     <div class="dropdown-content">
-                        <a href="#definicao">Definição</a>
-                        <a href="#importancia">Importancia</a>
+                        <a href="#importancia">Importância</a>
+                        <a href="#definicao">Metas</a>
                         <a href="#mundo">Mundo</a>
                     </div>
                 </div>
@@ -50,11 +50,12 @@
             <div class="card-home">
                 <div class="initial-card-home">
                     <h2>AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA</h2><br>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam recusandae similique numquam harum illo autem odio, consequatur quas in eligendi! Repellat dolor placeat nihil molestias nisi amet totam deleniti.</p>
+                    <p> Com a clara exposição de mudanças climáticas a nível catastrófico, é impressendível a necessidade de tomar medidas urgentes
+                        para combater tais mudanças a nível mundial e seus sérios impactos na vida e desenvolvimento humano.</p>
                 </div>
             </div>
         </div>
-        <div class="titulo-secao" id="definicao">
+        <div class="titulo-secao" id="importancia">
             <i class="fa-solid fa-book-open-reader"></i>
             <h1> Porque o Clima é importante? </h1>
         </div>
@@ -62,8 +63,9 @@
 
             <div class="container-conteudo">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed et facilis perspiciatis mollitia, 
-                    aliquam dolorem totam atque molestiae adipisci perferendis inventore ullam ipsum fugiat voluptas soluta. Dicta, eos et.
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nisi omnis quo maiores 
+                    eligendi hic adipisci totam, ratione quisquam unde, cum ea corrupti, qui error voluptatem necessitatibus iste 
+                    similique.
                 </p>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at eros sit amet lectus tincidunt 
@@ -89,34 +91,69 @@
             </div>
         </div>
         <hr>
-        <div class="titulo-secao" id="importancia">
+        <div class="titulo-secao" id="definicao">
             <i class="fa-solid fa-lightbulb"></i>
-            <h1> Entendendo a Importancia! </h1>
+            <h1> Metas e objetivos! </h1>
         </div>
         <div class="container-corpo">
 
             <div class="container-conteudo">
 
-                <p>
-                    APLICA ACORDEÃO PARA EXIBIR OS OBJETIVOS DO TEMA
+                <p>Dada a importância e relevancia no tema na idade contemporânea, ve-se a necessidade de aplicar metas e definir objetivos claros 
+                    para que um plano de ação a curto, médio e longo prazo continue preservando, controlando e diminuindo os impactos e efeitos das
+                    mudanças climáticas em escala global.
                 </p>
                 
-                <button class="accordion">Section 1</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button class="accordion">Section 2</button>
-                    <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at eros sit amet lectus 
-                    tincidunt laoreet ac vitae erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                    Nunc rhoncus eu nisl ut ultrices. Vivamus enim nunc, sagittis eget consectetur ut, ornare sit amet 
-                    orci. Phasellus consectetur ligula vitae magna pharetra, eu viverra erat tempus. Phasellus rhoncus sagittis 
-                    tellus, a placerat odio porta vel. Vivamus libero orci, ultricies id malesuada quis, fermentum semper est. Donec 
-                    pretium blandit lobortis. Donec non tellus in velit gravida ultricies. Donec lacinia quis dui ut sodales.
-                </p>
+                <div class="container-acordeao">
+
+                    <button class="accordion" onclick="acordeon()">13.1 - Reforçar resiliência e Adaptação</button>
+                    <div class="panel">
+                        <p> Por Reforçar a resiliência e a capacidade de adaptação a riscos relacionados ao clima e às catástrofes naturais em 
+                            todos os países, essa meta incentiva os países a se prepararem para eventos climáticos extremos, como secas, inundações e furacões, 
+                            fortalecendo suas infraestruturas e desenvolvendo sistemas de alerta precoce. Isso inclui medidas para proteger comunidades 
+                            vulneráveis, promovendo políticas que reduzam os impactos e ajudem as populações a se adaptar aos novos cenários climáticos.
+                        </p>
+                    </div>
+
+                    <button class="accordion" onclick="acordeon()">13.1 - Reforçar resiliência e Adaptação</button>
+                    <div class="panel">
+                        <p> Por Reforçar a resiliência e a capacidade de adaptação a riscos relacionados ao clima e às catástrofes naturais em 
+                            todos os países, essa meta incentiva os países a se prepararem para eventos climáticos extremos, como secas, inundações e furacões, 
+                            fortalecendo suas infraestruturas e desenvolvendo sistemas de alerta precoce. Isso inclui medidas para proteger comunidades 
+                            vulneráveis, promovendo políticas que reduzam os impactos e ajudem as populações a se adaptar aos novos cenários climáticos.
+                        </p>
+                    </div>
+
+                    <button class="accordion" onclick="acordeon()">13.1 - Reforçar resiliência e Adaptação</button>
+                    <div class="panel">
+                        <p> Por Reforçar a resiliência e a capacidade de adaptação a riscos relacionados ao clima e às catástrofes naturais em 
+                            todos os países, essa meta incentiva os países a se prepararem para eventos climáticos extremos, como secas, inundações e furacões, 
+                            fortalecendo suas infraestruturas e desenvolvendo sistemas de alerta precoce. Isso inclui medidas para proteger comunidades 
+                            vulneráveis, promovendo políticas que reduzam os impactos e ajudem as populações a se adaptar aos novos cenários climáticos.
+                        </p>
+                    </div>
+    
+                    <button class="accordion" onclick="acordeon()">13.2 - Integrar medidas de mudança climática</button>
+                    <div class="panel">
+                        <p>Ao incentivar a integração de medidas da mudança do clima nas políticas, estratégias e planejamentos nacionais,
+                            Os países precisam incluir ações climáticas em suas políticas públicas, como a transição para energia limpa e 
+                            planejamento urbano sustentável. A ideia é garantir que o combate às mudanças climáticas seja parte central do 
+                            desenvolvimento nacional, promovendo práticas que reduzam as emissões de gases de efeito estufa e aumentem a 
+                            resiliência a desastres naturais.
+                        </p>
+                    </div>
+
+                    <button class="accordion" onclick="acordeon()">13.3 - Conscientização sobre a temática</button>
+                    <div class="panel">
+                        <p> Melhorando a educação, aumentando a conscientização e a capacidade humana e institucional sobre mitigação, adaptação, 
+                            redução de impacto e alerta precoce da mudança do clima, essa meta visa educar e conscientizar a população, 
+                            capacitando pessoas e instituições a agir contra as mudanças climáticas. Isso inclui a criação de programas 
+                            educacionais, campanhas públicas e a formação de lideranças capazes de desenvolver soluções climáticas eficientes. 
+                            Sistemas de alerta precoce são também cruciais para salvar vidas e mitigar danos.
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -191,6 +228,6 @@
     </section>
     <footer class="rodape">
         <p>&#169; Todos os Direitos Reservados - Gabriel dal Bó & Nicolas Baldin</p>
-    </footer>   
+    </footer>  
 </body>
 </html>
