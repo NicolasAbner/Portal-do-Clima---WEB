@@ -54,23 +54,6 @@ header .button-menu:active {
   background-color: #627687;
 }
 
-header nav.top-menu {
-  padding: 1.2rem;
-}
-
-header nav.top-menu ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
-  font-size: 2.4rem;
-  line-height: 3.4rem;
-}
-
-header nav.top-menu {
-  display: none;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -99,6 +82,7 @@ header nav.top-menu {
   background-color: #cce7ff;
   padding: 2rem 2.4rem;
   overflow: hidden;
+  z-index: 10;
 
   display: flex;
   flex-direction: column;
@@ -403,12 +387,19 @@ header nav.top-menu {
 
 @media (min-width: 768px) {
   .overlay,
-  .side-menu,
   header button.button-menu {
     display: none;
   }
 
-  header nav.top-menu {
+  .side-menu {
     display: flex;
+    flex-direction: row;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+
+  .side-menu h2 {
+    display: none;
   }
 }
