@@ -298,6 +298,9 @@ header .button-menu:active {
 /* Estilização de listas de itens no conteúdo da página */
 
 .container-conteudo ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
   padding-inline-start: 1.5rem;
 }
 
@@ -309,6 +312,21 @@ header .button-menu:active {
 .container-conteudo ul {
   margin-left: 2rem;
   list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.container-conteudo a {
+  color: black;
+}
+
+/* Estilização do conteúdo dos projetos */
+
+.container-conteudo .projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 /* Duas colunas Seção Acordo de Paris */
@@ -592,5 +610,14 @@ header .button-menu:active {
 
   .container-conteudo {
     width: 100%;
+  }
+
+  .container-conteudo .projeto h6 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .container-conteudo .projeto p {
+    font-size: 1.6rem;
   }
 }
