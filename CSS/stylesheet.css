@@ -191,7 +191,8 @@ header .button-menu:active {
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(10px);
-  width: 450px;
+  /*   width: 450px; Melhor não usar valor fixo pra não quebrar a responsividade*/
+  width: 80%;
   height: fit-content;
   align-items: center;
   padding: 10px;
@@ -204,7 +205,8 @@ header .button-menu:active {
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(3px);
-  width: 450px;
+  /* width: 450px; Melhor não usar valor fixo pra não quebrar a responsividade*/
+  width: 80%;
   height: fit-content;
   align-items: center;
   padding: 10px;
@@ -273,7 +275,8 @@ header .button-menu:active {
 .container-conteudo p {
   font-size: large;
   width: 90%;
-  margin: 50px 70px;
+  /*  margin: 50px 70px; */
+  margin: 5rem auto;
 }
 
 /* Duas colunas Seção Acordo de Paris */
@@ -360,7 +363,9 @@ header .button-menu:active {
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 300px;
+  /* width: 300px; Melhor não usar valor fixo pra não quebrar a responsividade */
+  width: 30%;
+
   transition: transform 0.5s;
 
   &::after {
@@ -442,7 +447,8 @@ header .button-menu:active {
 }
 
 .image-map img {
-  width: 600px;
+  /* width: 600px; Melhor não usar valor fixo pra não quebrar a responsividade*/
+  width: 100%;
   margin: 0px 0px 50px 0px;
 }
 
