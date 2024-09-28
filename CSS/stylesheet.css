@@ -227,11 +227,13 @@ header .button-menu:active {
   color: #ffff;
   font-size: x-large;
   margin: 5px 5px 15px 5px;
+  line-height: 3.2rem; /* Aumentada a altura da linha para uma melhor experiência de leitura do card */
 }
 
 .initial-card h2 {
   color: #cce7ff;
   text-align: center;
+  font-size: 3.2rem; /* Aumentada a fonte do título do card principal */
 }
 
 .initial-card-home p {
@@ -274,17 +276,39 @@ header .button-menu:active {
 
 .container-conteudo {
   width: 90%;
-  min-height: 500px;
+  /* min-height: 500px; Acho melhor não pré dimensionar a altura desse container porque o item pode ter um conteúdo menor*/
   height: fit-content;
   background-color: #d9d9d976;
   align-self: center;
+  padding: 3rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-align: justify;
+  /* Flex pra colocar espaçamento entre os parágrafos */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .container-conteudo p {
-  font-size: large;
-  width: 90%;
-  /*  margin: 50px 70px; */
-  margin: 5rem auto;
+  width: 100%;
+  /*  margin: 50px 70px; Substituído pelo padding no container-conteudo*/
+}
+
+/* Estilização de listas de itens no conteúdo da página */
+
+.container-conteudo ol {
+  padding-inline-start: 1.5rem;
+}
+
+.container-conteudo h6 {
+  font-size: 2rem;
+  margin: 0.8rem;
+}
+
+.container-conteudo ul {
+  margin-left: 2rem;
+  list-style: disc;
 }
 
 /* Duas colunas Seção Acordo de Paris */
@@ -469,7 +493,7 @@ header .button-menu:active {
   padding: 5px;
 }
 
-/* Responsividade */
+/* Responsividade do mobile para o desktop */
 
 @media (min-width: 768px) {
   /* Menu */
@@ -549,5 +573,24 @@ header .button-menu:active {
 
   .side-menu .menu-section:hover .menu-section-links {
     transform: translateX(-50%) scaleY(100%);
+  }
+}
+
+/* Responsividade do desktop para o mobile */
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .initial-card {
+    width: 100%;
+    margin: 0;
+    border: 0;
+  }
+
+  .container-conteudo {
+    width: 100%;
   }
 }
