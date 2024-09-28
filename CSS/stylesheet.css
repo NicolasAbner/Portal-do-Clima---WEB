@@ -404,11 +404,13 @@ header .button-menu:active {
 /* CARD NOTÍCÍAS + ANIMAÇÃO */
 .container-noticias {
   width: 90%;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .card-image {
+  height: 100%;
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
@@ -417,6 +419,11 @@ header .button-menu:active {
   /* width: 300px; Melhor não usar valor fixo pra não quebrar a responsividade */
   width: auto;
   max-width: 30%;
+
+  /* Tira estilo de hiperlink de todo o card */
+  text-transform: none;
+  text-decoration: none;
+  color: black;
 
   transition: transform 0.5s;
 
@@ -453,10 +460,12 @@ header .button-menu:active {
   height: 200px;
   object-fit: cover;
 }
+
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1.2rem;
   align-items: flex-start;
   padding: 20px;
   min-height: 250px;
@@ -485,9 +494,15 @@ header .button-menu:active {
   background-color: #f6b047;
 }
 
+.card-body h4 {
+  width: 100%;
+  font-size: 2rem;
+}
+
 .card-body p {
-  font-size: 13px;
-  margin: 0 0 40px;
+  width: 100%;
+  font-size: 1.6rem;
+  /* margin: 0 0 40px; */
 }
 
 /* Página Projetos */
