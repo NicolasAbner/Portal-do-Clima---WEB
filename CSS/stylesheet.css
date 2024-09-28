@@ -121,8 +121,9 @@ header .button-menu:active {
   border-top: 1px solid black;
 }
 
-.side-menu .menu-section .menu-section-header {
+.side-menu .menu-section .menu-section-header a {
   font-weight: bold;
+  font-size: 2.4rem;
 }
 
 .side-menu .menu-section .menu-section-links {
@@ -134,7 +135,7 @@ header .button-menu:active {
 }
 
 .side-menu .menu-section .menu-section-links a {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 /* Image Background Páginas */
@@ -515,7 +516,8 @@ header .button-menu:active {
   }
 
   .side-menu .menu-section:hover .menu-section-header {
-    background-color: #4b4c5b;
+    background-color: #afc7db;
+    transform: scale(110%);
   }
 
   .side-menu .menu-section:hover .menu-section-header a {
@@ -532,7 +534,7 @@ header .button-menu:active {
     transform: translateX(-50%) scaleY(0%);
     text-align: center;
     transition: 400ms;
-    background-color: #4b4c5b;
+    background-color: #afc7db;
     padding: 1.2rem;
     border-radius: 0.8rem;
   }
