@@ -562,7 +562,6 @@ header .button-menu:active {
   }
 
   .side-menu .menu-section {
-    display: inline-block;
     position: relative;
     overflow: visible;
   }
