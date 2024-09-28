@@ -29,6 +29,8 @@ header .logo {
   align-items: center;
   justify-content: space-between;
   gap: 1.6rem;
+  text-decoration: none;
+  color: black;
 }
 
 header .logo img {
@@ -119,11 +121,16 @@ header .button-menu:active {
   border-top: 1px solid black;
 }
 
+.side-menu .menu-section .menu-section-header {
+  font-weight: bold;
+}
+
 .side-menu .menu-section .menu-section-links {
   display: flex;
   flex-direction: column;
   margin-left: 0.8rem;
   margin-top: 0.8rem;
+  font-weight: thin;
 }
 
 .side-menu .menu-section .menu-section-links a {
@@ -461,7 +468,15 @@ header .button-menu:active {
   padding: 5px;
 }
 
+/* Responsividade */
+
 @media (min-width: 768px) {
+  /* Menu */
+
+  header {
+    justify-content: space-between;
+  }
+
   .overlay,
   header button.button-menu {
     display: none;
@@ -470,12 +485,67 @@ header .button-menu:active {
   .side-menu {
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    gap: 1.6rem;
     opacity: 1;
     visibility: visible;
     position: relative;
+    overflow: visible;
   }
 
   .side-menu h2 {
     display: none;
+  }
+
+  .side-menu .menu-section + .menu-section {
+    border: none;
+  }
+
+  .side-menu .menu-section {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+  }
+
+  .side-menu .menu-section .menu-section-header {
+    transition: 400ms;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+  }
+
+  .side-menu .menu-section:hover .menu-section-header {
+    background-color: #4b4c5b;
+  }
+
+  .side-menu .menu-section:hover .menu-section-header a {
+    color: white;
+    transition: 400ms;
+  }
+
+  .side-menu .menu-section .menu-section-links {
+    position: absolute;
+    margin: 0;
+    top: calc(100%);
+    left: 50%;
+    transform-origin: top center;
+    transform: translateX(-50%) scaleY(0%);
+    text-align: center;
+    transition: 400ms;
+    background-color: #4b4c5b;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+  }
+
+  .side-menu .menu-section .menu-section-links a + a {
+    border-top: 1px solid rgb(110, 109, 109);
+  }
+
+  .side-menu .menu-section .menu-section-links a {
+    color: white;
+  }
+
+  .side-menu .menu-section:hover .menu-section-links {
+    transform: translateX(-50%) scaleY(100%);
   }
 }
