@@ -18,7 +18,6 @@ function acordeon() {
 }
 
 // MENU
-
 const buttonMenu = document.querySelector(".button-menu")
 const overlay = document.querySelector(".overlay")
 const sideMenu = document.querySelector(".side-menu")
