@@ -403,6 +403,7 @@ header .button-menu:active {
 
 /* CARD NOTÍCÍAS + ANIMAÇÃO */
 .container-noticias {
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -414,7 +415,8 @@ header .button-menu:active {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   /* width: 300px; Melhor não usar valor fixo pra não quebrar a responsividade */
-  width: 30%;
+  width: auto;
+  max-width: 30%;
 
   transition: transform 0.5s;
 
@@ -619,5 +621,15 @@ header .button-menu:active {
 
   .container-conteudo .projeto p {
     font-size: 1.6rem;
+  }
+
+  .card-image {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-image {
+    max-width: 100%;
   }
 }
