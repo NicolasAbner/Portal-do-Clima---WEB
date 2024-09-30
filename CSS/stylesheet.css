@@ -66,6 +66,8 @@ header .button-menu:active {
   overflow: hidden;
   transition: 400ms;
 
+  z-index: 1000;
+
   opacity: 0;
   visibility: hidden;
 }
@@ -84,7 +86,7 @@ header .button-menu:active {
   background-color: #cce7ff;
   padding: 2rem 2.4rem;
   overflow: hidden;
-  z-index: 10;
+  z-index: 1001;
 
   display: flex;
   flex-direction: column;
