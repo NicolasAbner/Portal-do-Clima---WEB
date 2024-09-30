@@ -680,9 +680,9 @@ header .button-menu:active {
     margin: 0;
   }
 
-.initial-card-home h2{
-  color: #2b3b6c;
-}
+  .initial-card-home h2{
+    color: #2b3b6c;
+  }
 
   .initial-card-home p{
     color: black;
@@ -703,6 +703,16 @@ header .button-menu:active {
 
   .card-image {
     max-width: 40%;
+  }
+
+  .titulo-secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    font-size: 20px;
   }
 
 }
