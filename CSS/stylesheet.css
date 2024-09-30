@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   font-size: 62.5%;
+}
+
+/* Removido Scrollbar Chrome, Safari, Opera */
+body::-webkit-scrollbar{
+  display: none;
 }
 
 body {
@@ -13,6 +19,7 @@ body {
   background-color: #f0f9fb;
   margin: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-y: scroll;
 }
 
 header {
@@ -65,7 +72,7 @@ header .button-menu:active {
   background: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   transition: 400ms;
-
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
 }
@@ -84,7 +91,7 @@ header .button-menu:active {
   background-color: #cce7ff;
   padding: 2rem 2.4rem;
   overflow: hidden;
-  z-index: 10;
+  z-index: 1001;
 
   display: flex;
   flex-direction: column;
@@ -200,7 +207,7 @@ header .button-menu:active {
   flex-direction: column;
   backdrop-filter: blur(10px);
   /*   width: 450px; Melhor não usar valor fixo pra não quebrar a responsividade*/
-  width: 80%;
+  width: 50%;
   height: fit-content;
   align-items: center;
   padding: 10px;
@@ -241,11 +248,13 @@ header .button-menu:active {
   color: #ffff;
   font-size: x-large;
   margin: 5px 5px 15px 5px;
+  line-height: 3.2rem;
 }
 
 .initial-card-home h2 {
   color: #8facc6;
   text-align: center;
+  font-size: 3.2rem;
 }
 
 /* Definição Containers de Seções nas páginas */
@@ -266,6 +275,7 @@ header .button-menu:active {
   width: 50%;
   margin: 10px 0px 10px 70px;
   padding: 10px;
+  font-size: 20px;
 }
 
 .titulo-secao i {
@@ -374,7 +384,7 @@ header .button-menu:active {
   font-size: 20px;
   margin: 0px 10px 0px 0px;
 }
-
+ 
 .active,
 .accordion:hover {
   background-color: rgb(155, 187, 227);
@@ -394,11 +404,18 @@ header .button-menu:active {
 
 .panel {
   width: 87%;
-  padding: 0 18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.panel p{
+  width: 90%;
+  margin: 10px 10px 10px 10px;
 }
 
 /* CARD NOTÍCÍAS + ANIMAÇÃO */
@@ -624,6 +641,19 @@ header .button-menu:active {
     border: 0;
   }
 
+  .initial-card-home{
+    width: 80%;
+    margin: 0;
+  }
+
+.initial-card-home h2{
+  color: #2b3b6c;
+}
+
+  .initial-card-home p{
+    color: black;
+  }
+
   .container-conteudo {
     width: 100%;
   }
@@ -640,6 +670,7 @@ header .button-menu:active {
   .card-image {
     max-width: 40%;
   }
+
 }
 
 @media (max-width: 600px) {
