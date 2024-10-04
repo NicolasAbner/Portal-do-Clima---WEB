@@ -19,47 +19,6 @@
     <title>Portal Climático - Projetos</title>
   </head>
   <body>
-    <header>
-      <a href="./" class="logo">
-        <img src="./IMG/logo.svg" alt="Cloud-logo" />
-        <h1>Portal Climático</h1>
-      </a>
-      <button class="material-symbols-outlined button-menu">menu</button>
-      <nav class="side-menu">
-        <h2>Portal Climático</h2>
-        <div class="menu-section">
-          <div class="menu-section-header">
-            <a href="./">Home</a>
-          </div>
-          <div class="menu-section-links">
-            <a href="./#definicao">Definição</a>
-            <a href="./#importancia">Importância</a>
-            <a href="./#mundo">Mundo</a>
-          </div>
-        </div>
-        <div class="menu-section">
-          <div class="menu-section-header">
-            <a href="./acordo.html">Acordo de Paris</a>
-          </div>
-          <div class="menu-section-links">
-            <a href="./acordo.html#compromissos">Compromissos</a>
-            <a href="./acordo.html#desafios">Desafios</a>
-            <a href="./acordo.html#impacto">Impacto Global</a>
-            <a href="./acordo.html#noticias"> Notícias </a>
-          </div>
-        </div>
-        <div class="menu-section">
-          <div class="menu-section-header">
-            <a href="./projetos.html">Projetos</a>
-          </div>
-          <div class="menu-section-links">
-            <a href="./projetos.html#andamento">Em Andamento</a>
-            <a href="./projetos.html#futuros">Futuros</a>
-            <a href="./projetos.html#brasil">Brasil</a>
-          </div>
-        </div>
-      </nav>
-    </header>
     <div class="overlay"></div>
 
     <section>
