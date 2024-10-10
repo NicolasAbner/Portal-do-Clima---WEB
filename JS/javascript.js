@@ -19,6 +19,7 @@ function acordeon() {
 
 // MENU
 const buttonMenu = document.querySelector(".button-menu")
+const closeMenu = document.querySelector(".close-menu")
 const overlay = document.querySelector(".overlay")
 const sideMenu = document.querySelector(".side-menu")
 
@@ -36,6 +37,10 @@ function closeSideMenu() {
 
 buttonMenu.addEventListener("click", (e) => {
   openSideMenu()
+})
+
+closeMenu.addEventListener("click", (e) => {
+  closeSideMenu()
 })
 
 document.addEventListener("click", (e) => {

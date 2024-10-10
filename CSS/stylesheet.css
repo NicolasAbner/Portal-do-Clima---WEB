@@ -24,7 +24,7 @@ body {
 
 header {
   width: 100%;
-  background: #cce7ff;
+  background: #819bb4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,15 +48,35 @@ header .logo h1 {
   font-size: 2.4rem;
 }
 
-header .button-menu {
+header .button-menu{
   font-size: 2.8rem;
   margin-left: calc(4.5-1.2) rem;
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 0.8rem;
   transition: 400ms;
   background-color: transparent;
   border: none;
   color: black;
+}
+
+header .button-menu:hover{
+  cursor: pointer;
+}
+
+.close-menu{
+
+  padding: 1rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: left;
+  background: none;
+  width: fit-content;
+  border: 0px;
+
+}
+
+.close-menu:hover{
+  cursor: pointer;
 }
 
 header .button-menu:active {
@@ -88,7 +108,7 @@ header .button-menu:active {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #cce7ff;
+  background-color: #819bb4;
   padding: 2rem 2.4rem;
   overflow: hidden;
   z-index: 1001;
@@ -131,6 +151,7 @@ header .button-menu:active {
 .side-menu .menu-section .menu-section-header a {
   font-weight: bold;
   font-size: 2.4rem;
+  color: black;
 }
 
 .side-menu .menu-section .menu-section-links {
@@ -143,6 +164,7 @@ header .button-menu:active {
 
 .side-menu .menu-section .menu-section-links a {
   font-size: 2rem;
+  color: black;
 }
 
 /* Image Background Páginas */
@@ -245,14 +267,14 @@ header .button-menu:active {
 
 .initial-card-home p {
   text-align: center;
-  color: #ffff;
+  color: #000000;
   font-size: x-large;
   margin: 5px 5px 15px 5px;
   line-height: 3.2rem;
 }
 
 .initial-card-home h2 {
-  color: #8facc6;
+  color: #0f202f;
   text-align: center;
   font-size: 3.2rem;
 }
@@ -589,7 +611,12 @@ header .button-menu:active {
   }
 
   .overlay,
-  header button.button-menu {
+  header button.button-menu{
+    display: none;
+  }
+
+  .overlay,
+  header button.close-menu{
     display: none;
   }
 
@@ -630,7 +657,7 @@ header .button-menu:active {
   }
 
   .side-menu .menu-section:hover .menu-section-header a {
-    color: white;
+    color: #263b4d;
     transition: 400ms;
   }
 
@@ -653,7 +680,7 @@ header .button-menu:active {
   }
 
   .side-menu .menu-section .menu-section-links a {
-    color: white;
+    color: black;
   }
 
   .side-menu .menu-section:hover .menu-section-links {
@@ -667,6 +694,10 @@ header .button-menu:active {
   .card {
     width: 100%;
     margin: 0;
+  }
+
+  .side-menu h2 {
+    display: none;
   }
 
   .initial-card {
